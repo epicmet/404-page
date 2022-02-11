@@ -251,9 +251,11 @@ footer {
   font-size: 14px;
 }
 
-footer span {
+footer a {
   text-decoration: underline;
   font-weight: 700;
+  color: inherit;
+  cursor: pointer;
 }
 
 @media (min-width: 1024px) {
