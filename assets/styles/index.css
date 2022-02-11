@@ -122,6 +122,133 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --color-gray-1: #333333;
+  --color-gray-2: #4f4f4f;
+  --color-gray-3: #bdbdbd;
+  --color-white: #ffffff;
+}
 
 /* Typography */
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@700&family=Space+Mono:wght@400;700&display=swap");
+@font-face {
+  font-family: Inconsolata;
+  src: url("../fonts/Inconsolata.ttf");
+}
+
+@font-face {
+  font-family: Space-mono-r;
+  src: url("../fonts/SpaceMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: Space-mono-b;
+  src: url("../fonts/SpaceMono-Bold.ttf");
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat.ttf");
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25px 362px 381px;
+  padding-left: 24px;
+  padding-top: 20px;
+}
+
+h1 {
+  font-family: "Inconsolata";
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 25.18px;
+  color: var(--color-gray-1);
+}
+
+.banner {
+  justify-self: center;
+  align-self: center;
+  margin-top: 64px;
+  margin-bottom: 60px;
+  margin-left: -24px;
+}
+.banner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 286.83px;
+  max-height: 238px;
+}
+
+.info {
+  display: grid;
+  grid-template-rows: 142px 177px 68px;
+}
+
+.info h2 {
+  font-family: Space-mono-b;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 71px;
+  letter-spacing: -0.035em;
+  text-align: left;
+  color: var(--color-gray-1);
+}
+
+.info p {
+  font-family: Space-mono-r;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: -0.035em;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 66px;
+  max-width: 328px;
+  color: var(--color-gray-2);
+}
+
+.info button {
+  font-family: Space-mono-b;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  text-align: center;
+  text-transform: uppercase;
+  width: 216px;
+  height: 68px;
+  color: var(--color-white);
+  background-color: var(--color-gray-1);
+  border: none;
+}
+
+footer {
+  margin-top: 114px;
+  padding-bottom: 24px;
+  text-align: center;
+  color: var(--color-gray-3);
+  font-family: Montserrat;
+  font-size: 14px;
+}
+
+footer span {
+  text-decoration: underline;
+  font-weight: 700;
+}
