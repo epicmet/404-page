@@ -252,3 +252,37 @@ footer span {
   text-decoration: underline;
   font-weight: 700;
 }
+
+@media (min-width: 1024px) {
+  main {
+    padding-left: 77px;
+    padding-top: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 133px 1fr;
+  }
+
+  .banner {
+    grid-row-start: 2;
+    justify-self: start;
+    align-self: start;
+    margin: 0;
+  }
+
+  .banner img {
+    max-width: 539.22px;
+    max-height: 447.43px;
+  }
+
+  .info {
+    grid-row-start: 2;
+  }
+
+  .info h2 {
+    font-size: 64px;
+  }
+
+  .info p {
+    font-size: 24px;
+    max-width: 385px;
+  }
+}
